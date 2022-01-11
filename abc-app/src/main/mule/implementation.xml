@@ -22,6 +22,7 @@ output application/json
 payload]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="ce2a22a8-863d-4a3d-a657-03e375b9c214" />
 	</flow>
 	<flow name="getEmployeeByID" doc:id="37f0cc8e-a3e2-4baa-9c39-0bc38c0bf5e5">
 		<http:listener doc:name="Listener" doc:id="bb67b944-a310-4cd5-8834-c6e7c3ab0e25" config-ref="HTTP_Listener_config" path="/employee/{ID}"/>
